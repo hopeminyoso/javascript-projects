@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+body{
+    font-family: 'Borel', cursive;
+}
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.hex-colors{
+    text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorChange 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 20%; 
+}
+
+@keyframes  colorChange{
+    0%{
+        color: aqua;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: indigo;
+    color: aqua;
+    }
+    60%{
+        color: purple;
+    }
+    80%{
+        color: rgb(49, 57, 102);
+    }
+    1000%{
+        color: rgb(150, 113, 142);
+    }
+}
+
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h1{
+        font-size: 1.5rem;
+    } 
+}
