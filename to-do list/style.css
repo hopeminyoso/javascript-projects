@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Borel&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bona Nova', serif;
+    font-family: 'Borel', cursive;
+    background-image: linear-gradient(to right, #FFE5EC, #FFC2D1);
+    color: #fff;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.nav h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.user-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+  
+  .user-input input {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.30s ease-in-out;
+  }
+
+.user-input input:focus{
+  box-shadow: 0 0 5px #FFC2D1;
+  border: 1px solid #FFC2D1;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+}
+
+.user-input button:hover{
+  background-color: lightpink;
+  color: honeydew;
+}
+
+.to-do-items{
+  width: 500px;
+  margin: auto;
+}
+
+.item{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top:10px;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  text-transform: uppercase;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.item:hover{
+  box-shadow: 0 0 20px #FFC2D1;
+  border: 1px solid #FFC2D1;
+}
+
+.item i{
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media(max-width:480px){
+  .user-input input{width: 74%;}
+}
+
+@media(max-width:320px){
+  .user-input input{width: 60%;}
+}
