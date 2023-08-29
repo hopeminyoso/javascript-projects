@@ -21,7 +21,7 @@ function addItem(){
         h2.style.textDecoration = "line-through";
     });
     
-    allItems.appendChild(h2); // Use 'appendChild' instead of 'insertAdjacentElement'
+    allItems.appendChild(h2);
 
     userInput.value = ""; 
 }
